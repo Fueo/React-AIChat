@@ -1,0 +1,74 @@
+/* ==========================================
+   RESET & BIẾN GLOBAL
+   ========================================== */
+:root {
+    --bg-main: #1e1e2e;
+    --bg-sidebar: #181825;
+    --bg-msg-user: #363a4f;
+    --bg-msg-ai: #313244;
+    --bg-input: #11111b;
+
+    --text-main: #cdd6f4;
+    --text-sub: #7f849c;
+    --color-primary: #89b4fa;
+    --color-user: #a6e3a1;
+    --border-color: rgba(255, 255, 255, 0.05);
+}
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+    background-color: var(--bg-main);
+    color: var(--text-main);
+    height: 100vh;
+    overflow: hidden;
+}
+
+#root {
+    height: 100%;
+}
+
+/* ==========================================
+   BỐ CỤC TỔNG (LAYOUT)
+   ========================================== */
+.app-layout {
+    display: flex;
+    height: 100%;
+    width: 100%;
+}
+
+/* ==========================================
+   DÙNG CHUNG: AVATAR
+   ========================================== */
+.avatar {
+    width: 32px;
+    height: 32px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: bold;
+    font-size: 13px;
+    color: rgba(0, 0, 0, 0.6);
+    flex-shrink: 0;
+}
+
+.user-avatar {
+    background-color: var(--color-user);
+}
+
+.ai-avatar {
+    background-color: var(--color-primary);
+}
+
+.user-avatar-small {
+    background-color: var(--color-user);
+    width: 24px;
+    height: 24px;
+    font-size: 12px;
+}
