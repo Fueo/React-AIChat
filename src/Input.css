@@ -2,11 +2,9 @@
    KHUNG NHẬP LIỆU (MODERN FIXED BOTTOM)
    ========================================== */
 .input-area {
-    position: absolute;
-    bottom: 0;
-    left: 0;
     width: 100%;
-    padding: 30px;
+    padding: 20px;
+    flex-shrink: 0;
     background-image: linear-gradient(180deg, rgba(30, 30, 46, 0), var(--bg-main) 60%);
 }
 
